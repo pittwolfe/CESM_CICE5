@@ -14,7 +14,7 @@ import os, shutil, sys, glob, filecmp, imp
 CIMEROOT = os.environ.get("CIMEROOT")
 if CIMEROOT is None:
     raise SystemExit("ERROR: must set CIMEROOT environment variable")
-sys.path.append(os.path.join(CIMEROOT, "scripts", "Tools"))
+sys.path.append(os.path.join(CIMEROOT, "CIME", "Tools"))
 
 from standard_script_setup import *
 from CIME.case import Case
@@ -86,10 +86,12 @@ def _create_namelists(case, confdir, infile, nmlgen):
     if "DTRLVL=0" in case.get_value("CICE_CPPDEFS"):
         config['ntrlvl'] = "0"
 
-    if case.get_value("ATM2OCN_FMAPNAME").find('patc') != -1:
+    mapname = case.get_value("ATM2OCN_FMAPNAME")
+    if mapname is not None and 'patc' in mapname:
         config['fmaptype'] = 'patch'
 
-    if case.get_value("ATM2OCN_SMAPNAME").find('patc') != -1:
+    mapname = case.get_value("ATM2OCN_SMAPNAME")
+    if mapname is not None and 'patc' in mapname:
         config['smaptype'] = 'patch'
 
     # Note - xml ICE_NCAT, CICE_DECOMPSETTING, CICE_DECOMPTYPE are used
@@ -278,7 +280,7 @@ def buildnml(case, caseroot, compname):
 def _main_func():
 
     caseroot = parse_input(sys.argv)
-    with Case(caseroot) as case:
+    with Case(caseroot, read_only=False) as case:
         buildnml(case, caseroot, "cice5")
 
 if __name__ == "__main__":
