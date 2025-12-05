@@ -2670,6 +2670,7 @@
   </entry>
 
   <entry id="f_hi">
+    <!-- grid cell mean ice thickness -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2683,6 +2684,7 @@
   </entry>
 
   <entry id="f_hs">
+    <!-- grid cell mean snow thickness -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2696,6 +2698,7 @@
   </entry>
 
   <entry id="f_snowfrac">
+    <!-- grid cell mean snow fraction -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2707,6 +2710,7 @@
   </entry>
 
   <entry id="f_tsfc">
+    <!-- snow/ice surface temperature -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2717,10 +2721,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_aice">
+    <!-- ice area  (aggregate) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2734,6 +2741,7 @@
   </entry>
 
   <entry id="f_uvel">
+    <!-- ice velocity (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2742,6 +2750,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -2749,6 +2758,7 @@
   </entry>
 
   <entry id="f_vvel">
+    <!-- ice velocity (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2757,6 +2767,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -2764,6 +2775,7 @@
   </entry>
 
   <entry id="f_uatm">
+    <!-- atm velocity (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2772,12 +2784,14 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
     </values>
   </entry>
 
   <entry id="f_vatm">
+    <!-- atm velocity (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2786,12 +2800,14 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
     </values>
   </entry>
 
   <entry id="f_fswdn">
+    <!-- down solar flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2801,10 +2817,13 @@
       <value>mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fswup">
+    <!-- upward solar flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2812,10 +2831,13 @@
     </desc>
     <values>
       <value>mxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_flwdn">
+    <!-- down longwave flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2826,10 +2848,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_snow">
+    <!-- snowfall rate (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2840,6 +2865,8 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -2857,6 +2884,7 @@
   </entry>
 
   <entry id="f_rain">
+    <!-- rainfall rate (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2867,6 +2895,8 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -2986,6 +3016,7 @@
   </entry>
 
   <entry id="f_fswabs">
+    <!-- snow/ice/ocn absorbed solar flux (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -2995,6 +3026,8 @@
       <value>mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -3035,6 +3068,8 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -3093,6 +3128,7 @@
   </entry>
 
   <entry id="f_alvdr_ai">
+    <!-- visible direct albedo -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3102,10 +3138,13 @@
       <value>mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_alidr_ai">
+    <!-- near IR direct albedo -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3115,10 +3154,13 @@
       <value>mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_alvdf_ai">
+    <!-- visible diffuse albedo -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3128,10 +3170,13 @@
       <value>mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_alidf_ai">
+    <!-- near IR diffuse albedo -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3141,6 +3186,8 @@
       <value>mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -3201,6 +3248,7 @@
   </entry>
 
   <entry id="f_flat">
+    <!-- latent heat flux (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3211,10 +3259,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_flat_ai">
+    <!-- latent heat flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3225,10 +3276,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fsens">
+    <!-- sensible heat flux (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3239,10 +3293,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fsens_ai">
+    <!-- sensible heat flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3253,10 +3310,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_flwup">
+    <!-- upward longwave flux (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3267,10 +3327,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_flwup_ai">
+    <!-- upward longwave flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3285,6 +3348,7 @@
   </entry>
 
   <entry id="f_evap">
+    <!-- evaporative water flux (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3295,10 +3359,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_evap_ai">
+    <!-- evaporative water flux -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3354,6 +3421,7 @@
   </entry>
 
   <entry id="f_congel">
+    <!-- congelation ice growth -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3364,10 +3432,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_frazil">
+    <!-- frazil ice growth -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3379,10 +3450,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_snoice">
+    <!-- snow-ice formation -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3394,6 +3468,8 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -3412,6 +3488,7 @@
   </entry>
 
   <entry id="f_meltt">
+    <!-- top ice melt -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3423,10 +3500,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_melts">
+    <!-- top snow melt -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3437,10 +3517,13 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_meltb">
+    <!-- basal ice melt -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3452,10 +3535,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_meltl">
+    <!-- lateral ice melt -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3467,10 +3553,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fresh">
+    <!-- freshwtr flx ice to ocn (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3482,6 +3571,8 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -3500,6 +3591,7 @@
   </entry>
 
   <entry id="f_fsalt">
+    <!-- salt flux ice to ocn (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3511,6 +3603,8 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -3529,6 +3623,7 @@
   </entry>
 
   <entry id="f_fhocn">
+    <!-- heat flux ice to ocn (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3540,10 +3635,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fhocn_ai">
+    <!-- heat flux ice to ocn -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3558,6 +3656,7 @@
   </entry>
 
   <entry id="f_fswthru">
+    <!-- SW thru ice to ocean (cpl) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3567,10 +3666,13 @@
       <value>mdhxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fswthru_ai">
+    <!-- SW thru ice to ocean -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3584,6 +3686,7 @@
   </entry>
 
   <entry id="f_strairx">
+    <!-- atm/ice stress (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3592,6 +3695,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3599,6 +3703,7 @@
   </entry>
 
   <entry id="f_strairy">
+    <!-- atm/ice stress (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3607,6 +3712,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3614,6 +3720,7 @@
   </entry>
 
   <entry id="f_strtltx">
+    <!-- sea sfc tilt stress (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3622,6 +3729,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3629,6 +3737,7 @@
   </entry>
 
   <entry id="f_strtlty">
+    <!-- sea sfc tilt stress (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3637,6 +3746,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3644,6 +3754,7 @@
   </entry>
 
   <entry id="f_strcorx">
+    <!-- coriolis stress (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3652,6 +3763,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3659,6 +3771,7 @@
   </entry>
 
   <entry id="f_strcory">
+    <!-- coriolis stress (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3667,6 +3780,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3674,6 +3788,7 @@
   </entry>
 
   <entry id="f_strocnx">
+    <!-- ocean/ice stress (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3682,6 +3797,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3689,6 +3805,7 @@
   </entry>
 
   <entry id="f_strocny">
+    <!-- ocean/ice stress (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3697,6 +3814,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3704,6 +3822,7 @@
   </entry>
 
   <entry id="f_strintx">
+    <!-- internal ice stress (x) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3712,6 +3831,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3719,6 +3839,7 @@
   </entry>
 
   <entry id="f_strinty">
+    <!-- internal ice stress (y) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3727,6 +3848,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3734,6 +3856,7 @@
   </entry>
 
   <entry id="f_strength">
+    <!-- compressive ice strength -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3742,6 +3865,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3749,6 +3873,7 @@
   </entry>
 
   <entry id="f_divu">
+    <!-- strain rate (divergence) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3757,6 +3882,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3764,6 +3890,7 @@
   </entry>
 
   <entry id="f_shear">
+    <!-- strain rate (shear) -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3772,6 +3899,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3779,6 +3907,7 @@
   </entry>
 
   <entry id="f_sig1">
+    <!-- norm. principal stress 1 -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3787,6 +3916,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
@@ -3794,6 +3924,7 @@
   </entry>
 
   <entry id="f_sig2">
+    <!-- norm. principal stress 2 -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3802,6 +3933,7 @@
     <values>
       <value>mxxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
@@ -3809,6 +3941,7 @@
   </entry>
 
   <entry id="f_dvidtt">
+    <!-- volume tendency thermo -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3820,10 +3953,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_dvidtd">
+    <!-- volume tendency dynamics -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3832,6 +3968,7 @@
     <values>
       <value>mdxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3839,6 +3976,7 @@
   </entry>
 
   <entry id="f_daidtt">
+    <!-- area tendency thermo -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3850,10 +3988,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_daidtd">
+    <!-- area tendency dynamics -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3862,6 +4003,42 @@
     <values>
       <value>mdxxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
+      <value hgrid="ar9v3">mxxxx</value>
+      <value hgrid="ar9v4">mdhxx</value>
+      <value hgrid ='tx0.25v1'>mdhxx</value>
+    </values>
+  </entry>
+
+  <entry id="f_dagedtt">
+    <!-- age tendency thermo -->
+    <type>char</type>
+    <category>history</category>
+    <group>icefields_nml</group>
+    <desc>
+    </desc>
+    <values>
+      <value>mdxxx</value>
+      <value cice_mode='prescribed'>xxxxx</value>
+      <value hgrid="ar9v3">mxxxx</value>
+      <value hgrid="ar9v4">mdhxx</value>
+      <value hgrid ='tx0.25v1'>mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
+    </values>
+  </entry>
+
+  <entry id="f_dagedtd">
+    <!-- age tendency dynamics -->
+    <type>char</type>
+    <category>history</category>
+    <group>icefields_nml</group>
+    <desc>
+    </desc>
+    <values>
+      <value>mdxxx</value>
+      <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
@@ -3955,6 +4132,7 @@
   </entry>
 
   <entry id="f_aicen">
+    <!-- ice area, categories -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3966,10 +4144,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_vicen">
+    <!-- ice volume, categories -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3981,10 +4162,13 @@
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_vsnon">
+    <!-- snow depth on ice, categories -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -3995,10 +4179,13 @@
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fswsfcn">
+    <!-- surface absorbed shortwave, categories -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -4009,10 +4196,13 @@
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fswintn">
+    <!-- surface absorbed shortwave, categories -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -4023,10 +4213,13 @@
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
   <entry id="f_fswthrun">
+    <!-- penetrating shortwave, categories -->
     <type>char</type>
     <category>history</category>
     <group>icefields_nml</group>
@@ -4037,6 +4230,8 @@
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid="ar9v3">mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -4449,6 +4644,7 @@
   </entry>
 
   <entry id="f_apond_ai">
+    <!-- melt pond fraction of grid cell -->
     <type>char</type>
     <category>history</category>
     <group>icefields_pond_nml</group>
@@ -4459,6 +4655,8 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -4487,6 +4685,8 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -4533,6 +4733,7 @@
   </entry>
 
   <entry id="f_apeff_ai">
+    <!-- radiation-effective pond area fraction over grid cell -->
     <type>char</type>
     <category>history</category>
     <group>icefields_pond_nml</group>
@@ -4543,6 +4744,8 @@
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
       <value hgrid ='tx0.25v1'>xxxxx</value>
+      <value hgrid='sx066av1'>xxxxx</value>
+      <value hgrid='sx066rv1'>xxxxx</value>
     </values>
   </entry>
 
@@ -4551,6 +4754,7 @@
   <!-- =========================== -->
 
   <entry id="f_ardg">
+    <!-- ridged ice area fraction -->
     <type>char</type>
     <category>history</category>
     <group>icefields_mechred_nml</group>
@@ -4560,6 +4764,7 @@
       <value>mxxxx</value>
       <value hgrid="ar9v4">mdhxx</value>
       <value cice_mode='prescribed'>xxxxx</value>
+      <value cice_mode='thermo_only'>xxxxx</value>
       <value hgrid ='tx0.25v1'>mdhxx</value>
     </values>
   </entry>
