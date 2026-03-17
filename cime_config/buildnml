@@ -278,7 +278,7 @@ def buildnml(case, caseroot, compname):
 def _main_func():
 
     caseroot = parse_input(sys.argv)
-    with Case(caseroot) as case:
+    with Case(caseroot, read_only=False) as case:
         buildnml(case, caseroot, "cice5")
 
 if __name__ == "__main__":
