@@ -14,12 +14,12 @@ import os, shutil, sys, glob, filecmp, imp
 CIMEROOT = os.environ.get("CIMEROOT")
 if CIMEROOT is None:
     raise SystemExit("ERROR: must set CIMEROOT environment variable")
-sys.path.append(os.path.join(CIMEROOT, "scripts", "Tools"))
+sys.path.append(os.path.join(CIMEROOT, "CIME", "Tools"))
 
 from standard_script_setup import *
 from CIME.case import Case
 from CIME.nmlgen import NamelistGenerator
-from CIME.utils import expect
+from CIME.utils import expect, import_from_file
 from CIME.buildnml import create_namelist_infile, parse_input
 
 logger = logging.getLogger(__name__)
@@ -85,12 +85,6 @@ def _create_namelists(case, confdir, infile, nmlgen):
 
     if "DTRLVL=0" in case.get_value("CICE_CPPDEFS"):
         config['ntrlvl'] = "0"
-
-    if case.get_value("ATM2OCN_FMAPNAME").find('patc') != -1:
-        config['fmaptype'] = 'patch'
-
-    if case.get_value("ATM2OCN_SMAPNAME").find('patc') != -1:
-        config['smaptype'] = 'patch'
 
     # Note - xml ICE_NCAT, CICE_DECOMPSETTING, CICE_DECOMPTYPE are used
     # in setting the cice namelist and are set in buildlib:
@@ -202,7 +196,7 @@ def buildnml(case, caseroot, compname):
         cmd = os.path.join(os.path.join(srcroot,"components","cice5","cime_config","buildcpp"))
         logger.info("     ...buildnml calling cice5 buildcpp to set build time options")
         try:
-            mod = imp.load_source("buildcpp", cmd)
+            mod = import_from_file("buildcpp", cmd)
             mod.buildcpp(case)
         except:
             raise
