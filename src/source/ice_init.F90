@@ -392,9 +392,9 @@
       ! runid and runtype are obtained from the driver, not from the namelist
 
       if (my_task == master_task) then
-         history_file  = trim(runid) // ".cice" // trim(inst_suffix) //".h"
-         restart_file  = trim(runid) // ".cice" // trim(inst_suffix) //".r"
-         incond_file   = trim(runid) // ".cice" // trim(inst_suffix) //".i"
+         history_file  = trim(runid) // ".cice5" // trim(inst_suffix) //".h"
+         restart_file  = trim(runid) // ".cice5" // trim(inst_suffix) //".r"
+         incond_file   = trim(runid) // ".cice5" // trim(inst_suffix) //".i"
          ! Note the nuopc cap will set nu_diag before this point - so just
          ! need to check that it is non-zero first
          if (nu_diag == ice_stdout) then
